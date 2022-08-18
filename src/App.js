@@ -31,7 +31,7 @@ const App = () => {
                 setFilteredPlaces([]);
                 setIsLoading(false);
             })
-    }, [type, coordinates, bounds])
+    }, [type, bounds])
 
     useEffect(() => {
         const filteredPlaces = places.filter((place) => place.rating > rating);
